@@ -1,0 +1,258 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset0 Open Sans;}}
+{\colortbl ;\red127\green0\blue85;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 1)Import Bootstrap in Your Application ..\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+  \par
+  <title>Web Development Blog</title>\par
+  <meta charset="utf-8">\par
+  <meta name="viewport" content="width=device-width, initial-scale=1">\par
+\par
+</head>\par
+<body>\par
+\par
+\tab <h1>Web Development Blog</h1>\par
+\tab <p>This blog discusses web development tools and libraries.</p>\par
+\par
+</body>\par
+</html>\par
+\b 2)Develop a static webpage\par
+\b0 <!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+  \par
+  <title>Web Development Blog</title>\par
+  <meta charset="utf-8">\par
+  <meta name="viewport" content="width=device-width, initial-scale=1">\par
+\par
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">\par
+</head>\par
+\par
+<body>\par
+\tab <div class="page-header">\par
+  \tab\tab <h1>Introduction to Bootstrap</h1>\par
+  \tab\tab <img src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg" class="img-fluid w-100 p-3" alt="Responsive image">\par
+\tab </div>\par
+\tab <div class=\ldblquote container-fluid\rdblquote > \par
+\tab\tab <p> Get started with <mark>Bootstrap</mark>, the world\rquote s most popular framework for building responsive, mobile-first sites, with Bootstrap <abbr title="Content Delivery Network">CDN</abbr> and a template starter page. </p>\par
+\par
+\tab\tab <p>According to the official website, Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. Sounds great! Now how do I use it? It would be easy to send you over to their Getting Started page and call it a day. Their setup guide is indeed a host of useful information \f1\emdash  links to CDNs, explanations on how to install with Bower, npm, and Composer, information on integration with Autoprefixer and LESS, a bunch of templates, licenses, and translations \emdash  but you could read this blog here instead for a better and easier understanding.</p>\par
+\tab\tab <span class="glyphicon glyphicon-pencil"></span>\par
+\par
+\tab\tab <p class="text-center">The list below shows the different version of Bootstrap so far. <span class="glyphicon glyphicon-list-alt"></span></p>\par
+\par
+\tab\tab <ul class="list-group">\par
+\tab\tab   <li class="list-group-item">v1.x</li>\par
+\tab\tab   <li class="list-group-item">v2.x</li>\par
+\tab\tab   <li class="list-group-item">v3.x</li>\par
+\tab\tab   <li class="list-group-item">v4.x</li>\par
+\tab\tab </ul>\par
+\par
+\tab\tab <p class="text-center bg-info"> The main features of bootstrap is, it is very simple and easy to use, huge JavaScript plugins are available, easily design mobile friendly website.</p>\par
+\par
+\tab </div>\par
+\par
+\tab\par
+\tab <div class="container-fluid">   \par
+\tab   <h2></h2>\par
+\tab   <table class="table table-bordered table-striped">\par
+\tab     <thead>\par
+\tab       <tr >\par
+\tab         <th>Features of Bootstrap</th>\par
+\tab       </tr>\par
+\tab     </thead>\par
+\tab     <tbody>\par
+\tab       <tr>\par
+\tab         <td>Easy to Use</td>\par
+\tab       </tr>\par
+\tab       <tr>\par
+\tab         <td>Mobile Friendly</td>\par
+\tab       </tr>\par
+\tab       <tr>\par
+\tab         <td>Prestyled Components</td>\par
+\tab       </tr>\par
+\tab     </tbody>\par
+\tab   </table>\par
+\tab </div>\par
+\tab <div class="container-fluid"\par
+\tab\tab <p class="text-left">Lets take a look at the components of bootstrap:</p>\par
+\tab\tab <h1>CSS<span class="badge badge-secondary">Quoted</span></h1>\par
+\tab\tab <p class="text-justify">Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.</p>\par
+\tab\tab <h2>JS <span class="badge badge-secondary">Quoted</span></h2>\par
+\tab\tab <p class="text-justify">Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following scripts near the end of your pages, right before the closing bodytag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.We use jQuery\rquote s slim build, but the full version is also supported.</p>\par
+\tab </div>\par
+\tab <div class="card">\par
+\tab\tab   <div class="card-header">Author</div>\par
+\tab\tab   <div class="card-body">The article was contributed by katesmith12</div>\par
+\tab\tab   <a href="https://www.sitesbay.com/bootstrap/bootstrap-features-of-bootstrap" class="card-footer btn btn-outline-primary stretched-link">View References</a>\par
+\tab </div>\par
+\tab <!-- Footer -->\par
+\tab <footer class="page-footer font-small indigo">\par
+\par
+\tab   <!-- Copyright -->\par
+\tab   <div class="footer-copyright text-center py-3">This is the footer section where you can put the address and copyright details. \f0\'a9 2018 Copyright: \par
+\tab     <a href="https://simplilearn.net/"> Simplilearn</a>\par
+\tab   </div>\par
+\tab   <!-- Copyright -->\par
+\par
+\tab </footer>\par
+\tab <!-- Footer -->\par
+\par
+<script src="https://code.jquery.com/jquery-3.3.2.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>\par
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>\par
+</body>\par
+</html>\par
+3)FORM\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+  \par
+  <title>Web Development Blog</title>\par
+  <meta charset="utf-8">\par
+  <meta name="viewport" content="width=device-width, initial-scale=1">\par
+\par
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">\par
+</head>\par
+\par
+<body>\par
+\tab <div class="page-header">\par
+  \tab\tab <h1>Introduction to Bootstrap</h1>\par
+  \tab\tab <img src="https://images.pexels.com/photos/326424/pexels-photo-326424.jpeg" class="img-fluid w-100 p-3" alt="Responsive image">\par
+\tab </div>\par
+\tab <div class=\ldblquote container-fluid\rdblquote > \par
+\tab\tab <p> Get started with <mark>Bootstrap</mark>, the world\rquote s most popular framework for building responsive, mobile-first sites, with Bootstrap <abbr title="Content Delivery Network">CDN</abbr> and a template starter page. </p>\par
+\par
+\tab\tab <p>According to the official website, Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. Sounds great! Now how do I use it? It would be easy to send you over to their Getting Started page and call it a day. Their setup guide is indeed a host of useful information \f1\emdash  links to CDNs, explanations on how to install with Bower, npm, and Composer, information on integration with Autoprefixer and LESS, a bunch of templates, licenses, and translations \emdash  but you could read this blog here instead for a better and easier understanding.</p>\par
+\tab\tab <span class="glyphicon glyphicon-pencil"></span>\par
+\par
+\tab\tab <p class="text-center">The list below shows the different version of Bootstrap so far. <span class="glyphicon glyphicon-list-alt"></span></p>\par
+\par
+\tab\tab <ul class="list-group">\par
+\tab\tab   <li class="list-group-item">v1.x</li>\par
+\tab\tab   <li class="list-group-item">v2.x</li>\par
+\tab\tab   <li class="list-group-item">v3.x</li>\par
+\tab\tab   <li class="list-group-item">v4.x</li>\par
+\tab\tab </ul>\par
+\par
+\tab\tab <p class="text-center bg-info"> The main features of bootstrap is, it is very simple and easy to use, huge JavaScript plugins are available, easily design mobile friendly website.</p>\par
+\par
+\tab </div>\par
+\par
+\tab\par
+\tab <div class="container-fluid">   \par
+\tab   <h2></h2>\par
+\tab   <table class="table table-bordered table-striped">\par
+\tab     <thead>\par
+\tab       <tr >\par
+\tab         <th>Features of Bootstrap</th>\par
+\tab       </tr>\par
+\tab     </thead>\par
+\tab     <tbody>\par
+\tab       <tr>\par
+\tab         <td>Easy to Use</td>\par
+\tab       </tr>\par
+\tab       <tr>\par
+\tab         <td>Mobile Friendly</td>\par
+\tab       </tr>\par
+\tab       <tr>\par
+\tab         <td>Prestyled Components</td>\par
+\tab       </tr>\par
+\tab     </tbody>\par
+\tab   </table>\par
+\tab </div>\par
+\tab <div class="container-fluid"\par
+\tab\tab <p class="text-left">Lets take a look at the components of bootstrap:</p>\par
+\tab\tab <h1>CSS<span class="badge badge-secondary">Quoted</span></h1>\par
+\tab\tab <p class="text-justify">Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.</p>\par
+\tab\tab <h2>JS <span class="badge badge-secondary">Quoted</span></h2>\par
+\tab\tab <p class="text-justify">Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following scripts near the end of your pages, right before the closing bodytag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.We use jQuery\rquote s slim build, but the full version is also supported.</p>\par
+\tab </div>\par
+\tab <div class="card">\par
+\tab\tab   <div class="card-header">Author</div>\par
+\tab\tab   <div class="card-body">The article was contributed by katesmith12</div>\par
+\tab\tab   <a href="https://www.sitesbay.com/bootstrap/bootstrap-features-of-bootstrap" class="card-footer btn btn-outline-primary stretched-link">View References</a>\par
+\tab </div>\par
+\tab <!-- Footer -->\par
+\tab <footer class="page-footer font-small indigo">\par
+\par
+\tab   <!-- Copyright -->\par
+\tab   <div class="footer-copyright text-center py-3">This is the footer section where you can put the address and copyright details. \f0\'a9 2018 Copyright: \par
+\tab     <a href="https://simplilearn.net/"> Simplilearn</a>\par
+\tab   </div>\par
+\tab   <!-- Copyright -->\par
+\par
+\tab </footer>\par
+\tab <!-- Footer -->\par
+\par
+<script src="https://code.jquery.com/jquery-3.3.2.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>\par
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>\par
+</body>\par
+</html>\par
+\b 4)NAVIGATION AND PAGINATION:\par
+\b0 <!DOCTYPE html>\par
+<html>\par
+  <head>\par
+    <meta name="viewport" content="width=device-width, initial-scale=1">\par
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">\par
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>\par
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>\par
+  </head>\par
+  <body>\par
+    <nav class="navbar navbar-expand-md">\par
+      <a class="navbar-brand" href="#"><img src="images/noodle.png" alt=""></a>\par
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">\par
+        <span class="navbar-toggler-icon"></span>\par
+      </button>\par
+      <div class="collapse navbar-collapse" id="main-navigation">\par
+        <ul class="navbar-nav">\par
+          <li class="nav-item">\par
+            <a class="nav-link" href="index.html">Home</a>\par
+          </li>\par
+          <li class="nav-item">\par
+            <a class="nav-link" href="form.html">Contact</a>\par
+          </li>\par
+          <li class="nav-item">\par
+            <a class="nav-link" href="page.html">Pagination</a>\par
+          </li>\par
+        </ul>\par
+      </div>\par
+    </nav>\par
+    <p>The 'nav' tag is used to define a block of links for navigation, for the current page, or for other pages.</p>\par
+  </body>\par
+</html>\par
+\b Pagination:\par
+\b0\par
+
+\pard\widctlpar\li720\sl360\slmult1\cf1\i\f2\fs24\lang1033 DOCTYPE html>\par
+<html>\par
+  <head>\par
+    <meta name="viewport" content="width=device-width, initial-scale=1">\par
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">\par
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>\par
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>\par
+  </head>\par
+  <body>\par
+    <p>Pagination is used to divide a document into different pages with numbers.</p>\par
+    <nav aria-label="Pagination Demo">\par
+      <ul class="pagination">\par
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>\par
+        <li class="page-item"><a class="page-link" href="index.html">1</a></li>\par
+        <li class="page-item"><a class="page-link" href="form.html">2</a></li>\par
+        <li class="page-item"><a class="page-link" href="nav.html">3</a></li>\par
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>\par
+      </ul>\par
+    </nav>\par
+  </body>\par
+</html>\par
+\par
+
+\pard\widctlpar\sa160\sl360\slmult1\cf0\par
+
+\pard\widctlpar\sa200\sl360\slmult1\f0\fs22\lang9\par
+\par
+\par
+\par
+}
+ 
