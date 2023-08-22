@@ -1,0 +1,220 @@
+Functions and proto typing:
+1.1
+<html>
+    AN Stack</h1>
+        <p> Lesson 3 Demos </p>
+
+        <script src="functions_and_prototypes.js"></script>
+        
+
+    </body>
+	1.2
+</html>
+<html>
+    <body>
+        <script>
+ //function constructor 
+function Employee(name, designation, yearOfBirth){   
+    this.name= name; 
+    this.designation= designation; 
+    this.yearOfBirth= yearOfBirth;P 
+} 
+
+// creating calculateAge() method to the Prototype property 
+Employee.prototype.calculateAge= function(){  
+    console.log('The current age is: '+(2019- this.yearOfBirth)); 
+} 
+console.log(Employee.prototype); 
+  
+
+// creating Objects
+let Emp1= new Employee('Alex', 'Junior Tester', 1995);  
+console.log(Emp1) ;
+Emp1.calculateAge(); 
+
+let Emp2= new Employee('Dexter', 'Senior Software Developer', 1990); 
+console.log(Emp2) 
+Emp2.calculateAge();
+
+let Emp3= new Employee('Annie', 'Junior HR', 1998); 
+console.log(Emp3) 
+Emp3.calculateAge();
+</script>
+</body>
+</html>
+output:
+AN Stack
+Lesson 3 Demos
+
+WORKING WITH FUNCTIONS:
+
+
+<html>
+    <body>
+        <h1>MEAN Stack</h1>
+        <p> Lesson 3 Demos </p>
+
+        <script src="function.js"></script>
+        
+
+    </body>
+</html>
+
+1.2
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Function Example</title>
+</head>
+<body>
+    <h1>Javascript – Function</h1>
+
+    <script>
+        var x = (2 * 3) + 5;
+        var y = 3 * 4;
+
+        var result = myFunction(2, 3);
+        console.log(result);
+
+        function myFunction(num1, num2) {
+            var a = num1 * num2;
+            var b = num1 + num2;
+            return a + b;
+        }
+
+        console.log(myFunction(3, 4));
+
+        function toCelsius(f) {
+            return (5 / 9) * (f - 32);
+        }
+
+        console.log("The temperature is " + toCelsius(60));
+    </script>
+</body>
+</html>
+output:
+Output:
+
+11
+19
+The temperature is 15.555555555555557
+
+CallBACK:
+html>
+    <body>
+        <h1>MEAN Stack</h1>
+        <p> Lesson 3 Demos </p>
+
+        <script src="IIFEs_Callbacks_Closures.js"></script>
+        
+
+    </body>
+</html>
+
+1.2
+const empId = (function() {
+    let count = 0;
+    return function() {
+      ++count;
+      return `emp${count}`;
+    };
+  })();
+  
+  console.log("New Emplyee IDs are listed here");
+  console.log("Alex: "+empId()); 
+  console.log("Dexter: "+empId()); 
+  console.log("Annie: "+empId());
+   
+
+  //Callbacks
+  console.log("\n"); //to start the output from the neext line
+  function fullName(firstName, lastName, callback){
+    console.log("My name is " + firstName + " " + lastName);
+    callback(lastName);
+  }
+  
+  var greeting = function(ln){
+    console.log('Welcome ' + ln);
+  };
+  
+  fullName("Alex", "Wilson", greeting);
+  console.log("\n");
+  fullName("Dexter", "Johnson", greeting);
+  console.log("\n");
+  fullName("Annie", "Butler", greeting);
+   output:
+   Output:
+
+New Emplyee IDs are listed here
+Alex: emp1
+Dexter: emp2
+Annie: emp3
+
+
+My name is Alex Wilson
+Welcome Wilson
+
+
+My name is Dexter Johnson
+Welcome Johnson
+
+
+My name is Annie Butler
+Welcome Butler
+
+MAPS AND CLASSES:
+html>
+    <body>
+        <h1>MEAN Stack</h1>
+        <p> Lesson 3 Demos </p>
+
+        <script src="maps_and_classes.js"></script>
+        
+
+    </body>
+</html>
+1.2
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Javascript – Maps and Classes<h1>
+
+<script>
+
+var map1 = new Map(); 
+map1.set("first name", "Robb"); 
+map1.set("last name", "Stark"); 
+map1.set("friend 1","Bran") 
+    .set("friend 2","Arya"); 
+console.log(map1); 
+console.log("map1 has friend 3 ? " + map1.has("friend 3")); 
+console.log("get value for key = friend 3 - "+ map1.get("friend 3")); 
+console.log("delete element with key = friend 2 - " + map1.delete("friend 2")); 
+map1.clear(); 
+console.log(map1);
+class Employee
+{
+    constructor(id,name)
+    {
+      this.id=id;
+      this.name=name;
+    }
+    detail()
+    {
+  document.writeln(this.id+" "+this.name+"<br>")
+    }
+  }
+//passing object to a variable 
+var e1=new Employee(101,"Michael");
+var e2=new Employee(102,"Bob");
+e1.detail(); 
+e2.detail();
+
+
+output: 
+map1has friend ? false
+get value for key = friend 3 - undefined
+delete element with key = friend 2 – true
+101 Michael
+102 Bob
+ 
